@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Cars Form</h1>
+  <p id="description">This is a survey form about cars and your thoughts surrounding them</p>
+  <form id="survey-form">
+    <div class="input-contain">
+        <label id="name-label"> Name:<input type="text" id="name" class="rounded-border" placeholder="Name" required /></label>
+    </div>
+    <div class="input-contain">
+        <label id="email-label">Email:<input type="email" id="email" class="rounded-border" placeholder="Email" required /><label/>
+    </div>
+    <div class="input-contain">
+        <label id="number-label">Age:<input type="number" id="number" min=13 max=99 class="rounded-border" placeholder="Age" /></label>
+    </div>
+    <div class="input-contain">
+        <label>Favorite Car Manufacture
+        <select name="cars-list" id="dropdown" class="rounded-border" required>
+            <option disabled selected value="not-selected">(select-one)</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">Bmw</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="dodge">Dodge</option>
+            <option value="ferari">Ferari</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Honda</option>
+            <option value="lamborghini">Lamborghini</option>
+            <option value="mazda">Mazda</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="mazerati">Mazerati</option>
+            <option value="nissan">Nissan</option>
+            <option value="other">Other</option>   
+        </select></label>
+    </div>
+    <div class="input-contain">
+        <p>How Much do you love you current car?</p>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="dont-have=one">Don't have one</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="not-much">Not Much</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="a-little">A little</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="mostly-not">Mostly not</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="decently">Decently</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="fairly">Fairly</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="mostly">Mostly</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="lots">Lots</label>
+        <label>
+            <input 
+                type="radio" 
+                name="like-car-amo" 
+                value="100%">100%</label>
+
+    </div>
+    <div class="input-contain">
+       <p class="sm-text">what do you like about cars? (check all that corrospond to you)</p> 
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="community" 
+            />The community</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="noise" 
+            />The noise</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="speed" 
+            />The speed</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="feeling-of-family" 
+            />A feeling of family</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="friends" 
+            />Gaining friends</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="creavitity" 
+            />Creativity</label>
+        <label class="checkbox-label"><input 
+            type="checkbox" 
+            name="likes" 
+            value="welcoming" 
+            />The feeling of welcoming</label>
+        
+    </div>
+    <div class="input-contain">
+        <p>Any Comments?</p>
+        <textarea cols="60" rows="4" placeholder="Comments.."></textarea>
+    </div>
+    <div class="button-contain">
+        <button type="submit" id="submit" class="rounded-border">SUBMIT</button>   
+    </div>
+    
+    
+  </form>
+</body>
+</html>
